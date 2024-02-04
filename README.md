@@ -33,7 +33,7 @@ Start the server:
 npm start
 ```
 
-The API endpoints can be accessed at `http://localhost:3000`.
+The API endpoints can be accessed at `http://localhost:5000`.
 
 ## API Endpoints
 
