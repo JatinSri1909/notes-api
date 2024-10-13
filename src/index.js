@@ -3,11 +3,15 @@ const userRouter = require('./routes/userRoutes');
 const noteRouter = require('./routes/noteRoutes');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const path = require('path');
+
 
 dotenv.config();
 
 const mongoose = require('mongoose');
 const app = express();
+
+app.set('view engine', 'ejs');
 
 app.use(express.json());
 app.use(cors());
@@ -22,7 +26,7 @@ app.use('/notes', noteRouter);
 
 
 app.get('/', (req, res) => {
-    res.send('Notes App API is running...');
+    res.render('instructions');
 });
 
 const port = process.env.PORT || 5000;
