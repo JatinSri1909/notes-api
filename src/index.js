@@ -26,7 +26,7 @@ app.use('/notes', noteRouter);
 
 
 app.get('/', (req, res) => {
-    res.render('instructions');
+    res.render('readme');
 });
 
 const port = process.env.PORT || 5000;

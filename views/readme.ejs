@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes API Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Notes API</h1>
+    <p>This is a simple API for managing notes.</p>
+
+    <h2>Endpoints</h2>
+    <ul>
+        <li><strong>POST /users/signup</strong> - Sign up a new user</li>
+        <li><strong>POST /users/signin</strong> - Sign in an existing user</li>
+        <li><strong>GET /notes</strong> - Get all notes for the authenticated user</li>
+        <li><strong>POST /notes</strong> - Create a new note</li>
+        <li><strong>PUT /notes/:id</strong> - Update a note by ID</li>
+        <li><strong>DELETE /notes/:id</strong> - Delete a note by ID</li>
+    </ul>
+
+    <h2>Environment Variables</h2>
+    <ul>
+        <li><strong>PORT</strong>: The port on which the server will run.</li>
+        <li><strong>MONGODB_URI</strong>: The URI for connecting to MongoDB.</li>
+        <li><strong>SECRET_KEY</strong>: The secret key for JWT token generation.</li>
+    </ul>
+
+    <h2>License</h2>
+    <p>This project is licensed under the ISC License.</p>
+</body>
+</html>
